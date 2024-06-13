@@ -1,0 +1,10 @@
+.qr-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.qr-input-button {
+    gap: 10px;
+    margin-bottom: 20px;
+}
