@@ -18,9 +18,11 @@
 .current-progress-bar{
     height: 10px;
     background: #8b02b5;
-    width: 0%;
 }
 
 .data-container{
     margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

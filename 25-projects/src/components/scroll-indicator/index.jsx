@@ -53,6 +53,14 @@ export default function ScrollIndicator({ url }) {
 		};
 	}, []);
 
+	if (isLoading) {
+		return <div>Loading data...</div>;
+	}
+
+	if (errorMessage) {
+		return <div>Error! {errorMessage}</div>;
+	}
+
 	return (
 		<div>
 			<div className="top-container">
@@ -61,12 +69,12 @@ export default function ScrollIndicator({ url }) {
 					<div
 						className="current-progress-bar"
 						style={{ width: `${scrollPercentage}%` }}
-					></div>
+					/>
 				</div>
 			</div>
 			<div className="data-container">
 				{data && data.length > 0
-					? data.map((dataItem) => <p>{dataItem.title}</p>)
+					? data.map((dataItem) => <p key={dataItem.title}>{dataItem.title}</p>)
 					: null}
 			</div>
 		</div>
