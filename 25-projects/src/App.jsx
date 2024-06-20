@@ -1,5 +1,6 @@
 import "./App.css";
 import Accordion from "./components/accordeon";
+import ModalTest from "./components/custom-modal/modal-test";
 import TabsTest from "./components/custom-tabs/Tabs-test";
 import ImageSlider from "./components/image-slider";
 import LightDarkMode from "./components/light-dark-mode";
@@ -13,7 +14,7 @@ import menus from "./components/tree-view/data";
 
 function App() {
 	return (
-		<>
+		<div className="App">
 			{/* Accordion component */}
 			{/* <Accordion /> */}
 
@@ -42,8 +43,11 @@ function App() {
 			{/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
 
 			{/* Custom Tabs Component */}
-			<TabsTest />
-		</>
+			{/* <TabsTest /> */}
+
+			{/* Custom Modal Component */}
+			<ModalTest />
+		</div>
 	);
 }
 
