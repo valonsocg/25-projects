@@ -2,12 +2,14 @@ import "./App.css";
 import Accordion from "./components/accordeon";
 import ModalTest from "./components/custom-modal/modal-test";
 import TabsTest from "./components/custom-tabs/Tabs-test";
+import GithubProfileFinder from "./components/github-profile-finder";
 import ImageSlider from "./components/image-slider";
 import LightDarkMode from "./components/light-dark-mode";
 import LoadMoreData from "./components/load-mode-data";
 import QRCodeGenerator from "./components/qr-code-generator";
 import RandomColor from "./components/random-color";
 import ScrollIndicator from "./components/scroll-indicator";
+import SearchAutocomplete from "./components/search-autocomplete";
 import { StarRating } from "./components/star-rating";
 import TreeView from "./components/tree-view";
 import menus from "./components/tree-view/data";
@@ -46,7 +48,13 @@ function App() {
 			{/* <TabsTest /> */}
 
 			{/* Custom Modal Component */}
-			<ModalTest />
+			{/* <ModalTest /> */}
+
+			{/* Github Profile Finder Component */}
+			{/* <GithubProfileFinder /> */}
+
+			{/* Search Autocomplete with API Component */}
+			<SearchAutocomplete />
 		</div>
 	);
 }
