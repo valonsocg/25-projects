@@ -12,6 +12,7 @@ import ScrollIndicator from "./components/scroll-indicator";
 import SearchAutocomplete from "./components/search-autocomplete";
 import { StarRating } from "./components/star-rating";
 import TicTacToe from "./components/tic-tac-toe";
+import TicTacToeV2 from "./components/tic-tac-toe-v2";
 import TreeView from "./components/tree-view";
 import menus from "./components/tree-view/data";
 
@@ -58,7 +59,10 @@ function App() {
 			{/* <SearchAutocomplete /> */}
 
 			{/* Tic-Tac-Toe Component */}
-			<TicTacToe />
+			{/* <TicTacToe /> */}
+
+			{/* Tic-Tac-Toe v2 Component */}
+			<TicTacToeV2 />
 		</div>
 	);
 }
